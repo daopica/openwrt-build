@@ -54,7 +54,7 @@ jobs:
     - name: Load custom configuration
       run: mv .config.bak .config
 
-    - name: Debugging with tmate
+    - name: Use tmate connect ssh
       uses: mxschmitt/action-tmate@v3.17
       with:
         limit-access-to-actor: false  #如果github设置了SSH keys则这里可以输入true使用密钥登录
